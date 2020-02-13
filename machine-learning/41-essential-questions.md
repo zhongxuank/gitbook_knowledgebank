@@ -26,5 +26,11 @@ More reading: [https://www.quora.com/What-is-the-difference-between-supervised-a
 
 **Supervised Learning** is the case when your model is trained on labelled data. As an example, for a classification task, each sample is tagged with a label describing the classification of that sample. On the other hand, **Unsupervised Learning** is the where training is done on unlabelled data. 
 
+### Q: How is K-Nearest Neighbors different from K-means clustering?
+
+More reading: [https://www.quora.com/How-is-the-k-nearest-neighbor-algorithm-different-from-k-means-clustering](https://www.quora.com/How-is-the-k-nearest-neighbor-algorithm-different-from-k-means-clustering)
+
+K-Nearest Neighbors is a supervised learning method used for classification. 
+
 
 
