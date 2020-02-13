@@ -30,7 +30,17 @@ More reading: [https://www.quora.com/What-is-the-difference-between-supervised-a
 
 More reading: [https://www.quora.com/How-is-the-k-nearest-neighbor-algorithm-different-from-k-means-clustering](https://www.quora.com/How-is-the-k-nearest-neighbor-algorithm-different-from-k-means-clustering)
 
-K-Nearest Neighbors is a supervised learning method used for classification. 
+K-Nearest Neighbors is a supervised learning method - the label assigned to a given test point is decided by the k neighbors closest to the candidate point \(they "vote" with their own label\). The algorithm is optimized by choosing the right k.
+
+On the other hand, K-means clustering does not require labels. Instead, its goal is to group the data points into k groups. This is done by picking k random cluster centers \(usually initialized near the data but far from each other\). Each data point is then assigned to its nearest center. The center will then be moved to the average distance of the data points it is assigned to. This process is repeated until convergence \(or after a specific number of iterations\).
+
+### Q: Explain how the ROC \(Receiver Operating Characteristic\) curve works.
+
+More readings: [https://en.wikipedia.org/wiki/Receiver\_operating\_characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic), [https://journals.plos.org/ploscompbiol/article/file?type=supplementary&id=info:doi/10.1371/journal.pcbi.0020157.sd001](https://journals.plos.org/ploscompbiol/article/file?type=supplementary&id=info:doi/10.1371/journal.pcbi.0020157.sd001)
+
+The ROC curve is a graphical plot that describes the diagnostic ability of a binary classifier system as its discrimination threshold is varied. It compares the model's true positive rates \(y axis\) and false positive rates \(x axis\). It's used as a proxy for the trade-off between the sensitivity of the model \(true positives\) vs the fall-out / probability that it will trigger a false alarm.
+
+### Q: Define precision and recall.
 
 
 
