@@ -42,5 +42,51 @@ The ROC curve is a graphical plot that describes the diagnostic ability of a bin
 
 ### Q: Define precision and recall.
 
+More reading: [https://en.wikipedia.org/wiki/Precision\_and\_recall](https://en.wikipedia.org/wiki/Precision_and_recall)
 
+![Diagram of the difference between Precision and Recall.](../.gitbook/assets/precisionrecall.png)
+
+Recall is also known as the true positive rate, and it concerns itself with the model's ability to select relevant items. Its about how many positive samples the model is able to "recall". Mathematically, Recall = TP / TP + FN
+
+Precision on the other hand is also known as positive predictive value - of all the samples that your model marked as positive, how many of them are actually relevant. Mathematically, Precision = TP / TP + FP
+
+### Q: What is Bayes' Theorem? How is it useful in the Machine Learning context?
+
+![Fun handwritten version!](../.gitbook/assets/bayes.jpg)
+
+Bayes' Theorem is a mathematical tool to calculate conditional probabilities. In statistics, it is used in the process of "updating" the distribution of a parameter. In Machine Learning, it is often used in the case of understanding how to calculate the probability of something being true given that it tested true, while knowing other probabilities. 
+
+Let's say that there is a test for a specific disease, and I am interested in finding out the probability that I have the disease, given that I tested positive for it in the test. Assume that the probability that the test returns a positive result given that you have the disease is 80%. Assume also that if you don't have the disease, there is still a 10% chance that the test will return a positive result. Furthermore, we also know that in general, there is a 5% chance that a random member of the public would have the disease.
+
+Thus, we know that the probability of getting a positive result is \(0.8 \* 0.05\) + \(0.1 \* 0.95\) = 0.135. Thus, we know that the probability of me having the disease given that I have a positive result can be calculated by taking the product of the probability that I have the disease and the probability I have a positive result given that I have the test \(0.8 \* 0.05 = 0.04\), and divide it by the probability of getting a positive result. Thus, the final answer would be 0.04 / 0.135, which is only about 30%. 
+
+### Q: Why is "Naive Bayes" naive?
+
+More reading: [https://towardsdatascience.com/whats-so-naive-about-naive-bayes-58166a6a9eba](https://towardsdatascience.com/whats-so-naive-about-naive-bayes-58166a6a9eba)
+
+Naive Bayes makes the assumption that all features of a dataset are mutually independent, and as a result of that assumption, it is possible to calculate the probability of the sample by breaking it down to just a pure, unweighted product of the probability of observing each feature. This is often times not possible in real-life, and is thus a flawed assumption. Thus, this is why it is considered "naive".
+
+### Q: What is the difference between L1 and L2 regularization? 
+
+L1 and L2 comes from the L1 and L2 norms - where L1 norm is calculated by taking the sum of the absolute values of the components, and the L2 norm is derived from the sum of the squares. The intuitive idea is that regularization works by adding a term that minimizes on the L1 / L2 norm of the weights. The difference in the norm results in a difference in the effect of the regularization: L1 regularization tends to result in sparse weights \(some weights will be 0, while the others will be relatively large\), whereas L2 regularization spread the reduction across the weights.
+
+### Q: What's the difference between Type I and Type II errors?
+
+More reading: [https://en.wikipedia.org/wiki/Type\_I\_and\_type\_II\_errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors)
+
+Type I errors are also called False Positive. Think of it as telling a dog that it is a cat.
+
+Type II errors are known as False Negatives. Think of this as telling a dog that it is not a dog. 
+
+### Q: What is a Fourier Transform?
+
+More reading: [https://en.wikipedia.org/wiki/Fourier\_transform](https://en.wikipedia.org/wiki/Fourier_transform)
+
+Fourier transformations involve decomposing a function \(i.e. a signal\) into a series of periodic functions of various frequencies. In other words, it transforms the data from a time domain to a frequency domain. It is a method of extracting features from time-based data.
+
+### Q: What is the difference between Probability and Likelihood?
+
+More reading: [https://www.psychologicalscience.org/observer/bayes-for-beginners-probability-and-likelihood](https://www.psychologicalscience.org/observer/bayes-for-beginners-probability-and-likelihood)
+
+Probability attaches itself to possible results, whereas Likelihood attaches itself to possible hypothesis. This implies that probabilities are mutually exclusive and exhaustive - for each possible 
 
