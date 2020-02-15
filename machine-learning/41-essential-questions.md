@@ -4,7 +4,11 @@ description: >-
   https://www.springboard.com/blog/machine-learning-interview-questions/
 ---
 
-# 41 Essential Questions
+# Essential Questions
+
+## Quick Note:
+
+What started out as something I considered a good resort quickly became quite flawed down the line. I realised that a number of his answers \(especially those pertaining with more mathematical / statistical concepts\) were not really well-formed, and some were even straight up wrong. I would caution anyone reading the source - take the answers with a pinch of salt! Other than that, it was a great starting point for questions.
 
 ## Algorithms / Theory
 
@@ -95,4 +99,48 @@ The terms Likelihood and Probability are used interchangeably \(which should not
 In classical statistics, when studying a model with an unknown parameter, the parameter is assumed to be fixed, but unknown. This means that the goal is, with more and more test, to work our estimation towards this true value. Due to this, when we are looking at potential parameters, we ask how likely was it the case that the potential parameter is the true value of the parameter, given what we have observed in the sample. This captures the idea of "Likelihood" - we are trying to observe a fixed constant \(the parameter\), and the data can constantly be repeated to work towards an understanding.
 
 On the other hand, the Bayesian view of this is that the unknown parameter is itself a random variable, with its own probability distribution. The data, the samples that we get, are what is fixed, and we can only ever update our understanding of the parameter's probability distribution based on the data we observe, and our prior knowledge of the parameter. Thus, the parameter truly remains in the realm of probability, as it is a random variable. 
+
+### Q: What is Deep Learning and how is it different from other Machine Learning algorithms?
+
+Deep Learning is a subset of the machine learning family of algorithms, and has much in common with the general goal of machine learning algorithms - to learn a model which can make decisions \(predictive or generative\) based on information learned from data. In particular, deep learning methods make use of ideas borrow from neuroscience, with artificial "neurons" coming together to form a larger network. These neurons are then updated using backpropogation and through various iterations, are adjusted in order to capture information about the data we are learning from.
+
+### Q: What is the difference between a discriminative and generative model? 
+
+A generative model learns the joint probability p\(x, y\) of the inputs x and label y. It models the way the data was generated in order to categorize a signal. It is asking the question of based on my assumptions, which category is more likely to have generated my data. It then uses Bayes' rule to calculate the conditional probabilities.
+
+On the other hand, a discriminative model goes directly into modelling the conditional probability p\(y \| x\). It doesn't care for thinking about how the data was generated, and categorizes based on the signal itself. 
+
+The difference is that a generative model aims to learn a more general piece of information. It has been shown that in many cases, a discriminative model often has better test results.
+
+### Q: What type of cross validation should you use for time-series data?
+
+K-fold cross-validation will not work, since the samples of the data are not independent of the order they come in. Thus, a more principled method would be to use forward chaining, which means you start with your first n samples as training data, and test on n+1, then use the first n+1, testing on n+2, and so on.
+
+### Q: How are Decision Trees pruned?
+
+Decision tree pruning is the process of reducing branches of decision trees that have weaker predictive power in order to reduce the complexity of the model and increase the predictive accuracy of the decision tree. 
+
+One popular approach is Reduced Error pruning, which goes through the decision tree, replacing nodes with their most popular class. If it doesn't change the accuracy of the model, then keep the change. While naive, it is a method that is prized for its simplicity and speed. It also comes very close to reaching the optimal approach in many cases.
+
+### Q: What is a model's F1 score? How do you use it?
+
+The F1 score of a model is calculated using the harmonic mean of the precision and recall of the model. It is used to judge the overall performance of the model, with 1 being the highest and 0 being the lowest.
+
+![F1 score calculated using the harmonic mean of precision and recall.](../.gitbook/assets/f1.png)
+
+### Q: How would you handle an imbalanced dataset?
+
+More reading: [https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
+
+Imbalanced datasets are the situation where your data is skewed towards a certain class / group of classes. An example in the case of a binary classifier would be if one class had 80 samples and the other had 20. Here's a quick list of ways to deal with the imbalanced data:
+
+1. If you can, collect more data for the underrepresented classes. Simple!
+2. Change your performance metric. Models trained on imbalanced data but judge performance with overall error would be able to perform badly on the minor classes without much penalty. A better performance metric could be Cohen's Kappa, which is the categorization accuracy normalized by the imbalance of the classes.
+3. Resample your data. You could over-sample by taking copies of the minor classes, or under-sample by taking only a portion of the major class.
+4. Generate synthetic samples. Examples of these would be to implement Synthetic Minority Over-sampling Technique \(SMOTE\), which generate synthetic data by sampling from your existing data's attributes.
+5. Try penalized models, which add an additional penalty for misclassifying minor classes.
+
+
+
+
 

@@ -18,4 +18,5 @@ Before I get carried away with making this - knowing that this might one day be 
 * [ ] Review and organize notes on ML methods
 * [ ] Book people for mock tech interviews
 * [ ] Solve a bunch of Leetcode
+* [ ] Practice coding up basic ML algorithms in PyTorch / TensorFlow
 
