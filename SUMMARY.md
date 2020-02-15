@@ -30,4 +30,5 @@
     * [M207: Course Schedule](data-structures-and-algorithms/techniques/untitled-1/m207-course-schedule.md)
   * [6. Two Heaps](data-structures-and-algorithms/techniques/6.-two-heaps/README.md)
     * [H295: Find Median from Data Stream](data-structures-and-algorithms/techniques/6.-two-heaps/h295-find-median-from-data-stream.md)
+  * [7. Dynamic Programming](data-structures-and-algorithms/techniques/7.-dynamic-programming.md)
 
