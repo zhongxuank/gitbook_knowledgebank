@@ -86,7 +86,13 @@ Fourier transformations involve decomposing a function \(i.e. a signal\) into a 
 
 ### Q: What is the difference between Probability and Likelihood?
 
-More reading: [https://www.psychologicalscience.org/observer/bayes-for-beginners-probability-and-likelihood](https://www.psychologicalscience.org/observer/bayes-for-beginners-probability-and-likelihood)
+\(I don't quite like the answers I can find online - this part is mostly from Statistical Inference with Maria De Iorio, and it might not be very well phrased\)
 
-Probability attaches itself to possible results, whereas Likelihood attaches itself to possible hypothesis. This implies that probabilities are mutually exclusive and exhaustive - for each possible 
+Online a lot of the explanation seems to point at Likelihood being interchangeable with the idea of cumulative probability, whereas Probability is the idea of the probability density. I don't necessarily know if this is the right answer. 
+
+The terms Likelihood and Probability are used interchangeably \(which should not be correct\), and the above description does not address this in my opinion. To describe my understanding of the difference, I'll talk about the difference between the fundamental assumptions of classical and Bayesian statistics. 
+
+In classical statistics, when studying a model with an unknown parameter, the parameter is assumed to be fixed, but unknown. This means that the goal is, with more and more test, to work our estimation towards this true value. Due to this, when we are looking at potential parameters, we ask how likely was it the case that the potential parameter is the true value of the parameter, given what we have observed in the sample. This captures the idea of "Likelihood" - we are trying to observe a fixed constant \(the parameter\), and the data can constantly be repeated to work towards an understanding.
+
+On the other hand, the Bayesian view of this is that the unknown parameter is itself a random variable, with its own probability distribution. The data, the samples that we get, are what is fixed, and we can only ever update our understanding of the parameter's probability distribution based on the data we observe, and our prior knowledge of the parameter. Thus, the parameter truly remains in the realm of probability, as it is a random variable. 
 
