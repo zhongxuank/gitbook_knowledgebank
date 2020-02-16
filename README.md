@@ -15,8 +15,11 @@ Before I get carried away with making this - knowing that this might one day be 
 ## Big Tasks
 
 * [ ] Review and organize notes on DS & A methods
+  * [x] Topological Sort
+  * [ ] Heaps
+  * [x] Trees and Graphs
 * [ ] Review and organize notes on ML methods
-* [ ] Book people for mock tech interviews
+* [x] Book people for mock tech interviews
 * [ ] Solve a bunch of Leetcode
 * [ ] Practice coding up basic ML algorithms in PyTorch / TensorFlow
 

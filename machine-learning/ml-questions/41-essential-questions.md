@@ -48,7 +48,7 @@ The ROC curve is a graphical plot that describes the diagnostic ability of a bin
 
 More reading: [https://en.wikipedia.org/wiki/Precision\_and\_recall](https://en.wikipedia.org/wiki/Precision_and_recall)
 
-![Diagram of the difference between Precision and Recall.](../.gitbook/assets/precisionrecall.png)
+![Diagram of the difference between Precision and Recall.](../../.gitbook/assets/precisionrecall.png)
 
 Recall is also known as the true positive rate, and it concerns itself with the model's ability to select relevant items. Its about how many positive samples the model is able to "recall". Mathematically, Recall = TP / TP + FN
 
@@ -56,7 +56,7 @@ Precision on the other hand is also known as positive predictive value - of all 
 
 ### Q: What is Bayes' Theorem? How is it useful in the Machine Learning context?
 
-![Fun handwritten version!](../.gitbook/assets/bayes.jpg)
+![Fun handwritten version!](../../.gitbook/assets/bayes.jpg)
 
 Bayes' Theorem is a mathematical tool to calculate conditional probabilities. In statistics, it is used in the process of "updating" the distribution of a parameter. In Machine Learning, it is often used in the case of understanding how to calculate the probability of something being true given that it tested true, while knowing other probabilities. 
 
@@ -126,7 +126,7 @@ One popular approach is Reduced Error pruning, which goes through the decision t
 
 The F1 score of a model is calculated using the harmonic mean of the precision and recall of the model. It is used to judge the overall performance of the model, with 1 being the highest and 0 being the lowest.
 
-![F1 score calculated using the harmonic mean of precision and recall.](../.gitbook/assets/f1.png)
+![F1 score calculated using the harmonic mean of precision and recall.](../../.gitbook/assets/f1.png)
 
 ### Q: How would you handle an imbalanced dataset?
 

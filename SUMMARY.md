@@ -5,7 +5,11 @@
 
 ## Machine Learning
 
-* [Essential Questions](machine-learning/41-essential-questions.md)
+* [ML Algorithms](machine-learning/ml-algorithms/README.md)
+  * [Untitled](machine-learning/ml-algorithms/untitled.md)
+* [ML Questions](machine-learning/ml-questions/README.md)
+  * [Machine Learning Interview Questions](machine-learning/ml-questions/machine-learning-interview-questions.md)
+  * [Essential Questions](machine-learning/ml-questions/41-essential-questions.md)
 
 ## Data Structures and Algorithms
 
@@ -30,5 +34,23 @@
     * [M207: Course Schedule](data-structures-and-algorithms/techniques/untitled-1/m207-course-schedule.md)
   * [6. Two Heaps](data-structures-and-algorithms/techniques/6.-two-heaps/README.md)
     * [H295: Find Median from Data Stream](data-structures-and-algorithms/techniques/6.-two-heaps/h295-find-median-from-data-stream.md)
-  * [7. Dynamic Programming](data-structures-and-algorithms/techniques/7.-dynamic-programming.md)
+  * [7. Dynamic Programming](data-structures-and-algorithms/techniques/7.-dynamic-programming/README.md)
+    * [E70: Climbing Stairs](data-structures-and-algorithms/techniques/7.-dynamic-programming/e70-climbing-stairs.md)
+    * [E198: House Robber](data-structures-and-algorithms/techniques/7.-dynamic-programming/e198-house-robber.md)
+    * [M55: Jump Game](data-structures-and-algorithms/techniques/7.-dynamic-programming/m55-jump-game.md)
+    * [M62: Unique Paths](data-structures-and-algorithms/techniques/7.-dynamic-programming/m62-unique-paths.md)
+    * [M63: Unique Paths II](data-structures-and-algorithms/techniques/7.-dynamic-programming/m63-unique-paths-ii.md)
+    * [M139: Word Break](data-structures-and-algorithms/techniques/7.-dynamic-programming/m139-word-break.md)
+    * [M152: Maximum Product Subarray](data-structures-and-algorithms/techniques/7.-dynamic-programming/m152-maximum-product-subarray.md)
+    * [M213: House Robber II](data-structures-and-algorithms/techniques/7.-dynamic-programming/m213-house-robber-ii.md)
+    * [M377: Combination Sum 4](data-structures-and-algorithms/techniques/7.-dynamic-programming/m377-combination-sum-4.md)
+  * [8. Topological Sort](data-structures-and-algorithms/techniques/8.-topological-sort/README.md)
+    * [M210: Course Schedule II](data-structures-and-algorithms/techniques/8.-topological-sort/m210-course-schedule-ii.md)
+* [Topics](data-structures-and-algorithms/topics/README.md)
+  * [1. Trees and Graphs](data-structures-and-algorithms/topics/1.-trees-and-graphs/README.md)
+    * [E100: Same Tree](data-structures-and-algorithms/topics/1.-trees-and-graphs/e100-same-tree.md)
+    * [E104: Maximum Depth of Binary Tree](data-structures-and-algorithms/topics/1.-trees-and-graphs/e104-maximum-depth-of-binary-tree.md)
+    * [E226: Invert Binary Tree](data-structures-and-algorithms/topics/1.-trees-and-graphs/e226-invert-binary-tree.md)
+    * [M98: Validate Binary Search Tree](data-structures-and-algorithms/topics/1.-trees-and-graphs/m98-validate-binary-search-tree.md)
+    * [M105: Construct Binary Tree from Preorder and Inorder Traversal](data-structures-and-algorithms/topics/1.-trees-and-graphs/m105-construct-binary-tree-from-preorder-and-inorder-traversal.md)
 
