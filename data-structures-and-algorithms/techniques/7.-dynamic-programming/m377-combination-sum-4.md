@@ -44,12 +44,11 @@ Note: Recursive solutions cause a stack overflow with this problem, due to the s
 ```python
 class Solution:
     def combinationSum4(self, nums: List[int], target: int) -> int:
-        if target < 1:
-            return 0
-        dp = [0] * target + 1
-        for i in range(1, target + 1):
+        dp = [0 for _ in range(target+1)]
+        dp[0] = 1
+        for i in range(1,target+1):
             for n in nums:
-                dp[i] += dp[i - n] if i <= n else 0
+                dp[i] += dp[i-n] if i >= n else 0
         return dp[target]
 ```
 

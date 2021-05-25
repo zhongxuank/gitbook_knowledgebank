@@ -25,6 +25,13 @@ Given word = "SEE", return true.
 Given word = "ABCB", return false.
 ```
 
+### Question Analysis
+
+What are the EDGE CASES? 
+
+* If given an empty board, what do I do?
+  * Return False
+
 ### Solution: Recursive DFS
 
 We can traverse the board by doing a DFS, traversing to a node's adjacent neighbors. The issue is with keeping track of where we have already visited - a simple solution to this would be to replace the current board element with a filler tile \(like `#`\)  before making the traversal, and then adding back before returning the result.

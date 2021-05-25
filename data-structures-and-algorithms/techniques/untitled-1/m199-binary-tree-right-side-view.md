@@ -1,7 +1,7 @@
 # M199: Binary Tree Right-side View
 
 {% hint style="info" %}
-Problem: [https://leetcode.com/problems/binary-tree-right-side-view/submissions/](https://leetcode.com/problems/binary-tree-right-side-view/submissions/) \[SOLUTION COPIED\]
+Problem: [https://leetcode.com/problems/binary-tree-right-side-view/](https://leetcode.com/problems/binary-tree-right-side-view/) \[SOLUTION COPIED\]
 {% endhint %}
 
 ### The Problem

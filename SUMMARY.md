@@ -72,6 +72,9 @@
   * [9. Binary Search](data-structures-and-algorithms/techniques/9.-binary-search/README.md)
     * [M162: Find Peak Element](data-structures-and-algorithms/techniques/9.-binary-search/m162-find-peak-element.md)
     * [M209: Minimum Size Subarray Sum](data-structures-and-algorithms/techniques/9.-binary-search/m209-minimum-size-subarray-sum.md)
+  * [10. Merge Intervals](data-structures-and-algorithms/techniques/10.-merge-intervals/README.md)
+    * [M56: Merge Intervals](data-structures-and-algorithms/techniques/10.-merge-intervals/m56-merge-intervals.md)
+    * [M57: Insert Interval](data-structures-and-algorithms/techniques/10.-merge-intervals/m57-insert-interval.md)
 * [Topics](data-structures-and-algorithms/topics/README.md)
   * [1. Trees and Graphs](data-structures-and-algorithms/topics/1.-trees-and-graphs/README.md)
     * [E100: Same Tree](data-structures-and-algorithms/topics/1.-trees-and-graphs/e100-same-tree.md)
@@ -79,4 +82,6 @@
     * [E226: Invert Binary Tree](data-structures-and-algorithms/topics/1.-trees-and-graphs/e226-invert-binary-tree.md)
     * [M98: Validate Binary Search Tree](data-structures-and-algorithms/topics/1.-trees-and-graphs/m98-validate-binary-search-tree.md)
     * [M105: Construct Binary Tree from Preorder and Inorder Traversal](data-structures-and-algorithms/topics/1.-trees-and-graphs/m105-construct-binary-tree-from-preorder-and-inorder-traversal.md)
+  * [2. Linked Lists](data-structures-and-algorithms/topics/2.-linked-lists/README.md)
+    * [H23: Merge k Sorted Lists](data-structures-and-algorithms/topics/2.-linked-lists/h23-merge-k-sorted-lists.md)
 

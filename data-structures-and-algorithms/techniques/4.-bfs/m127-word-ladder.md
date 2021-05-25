@@ -22,9 +22,39 @@ Given two words \(_beginWord_ and _endWord_\), and a dictionary's word list, fin
 ### Solution
 
 {% hint style="info" %}
-Intuition: Build a graph on words that only differ by 1 letter, and then use BFS rooted on beginWord to search for endWord, which will give us a list of the shortest possible length.
+hIntuition: Traverse word list by searching for words that defer from current word by 1 letter. Using a BFS guarantees that the shortest path will be reported first. Generate a dictionary of letters in each position in a given word list to speed up the search through all possible words.
 {% endhint %}
 
-* O\(n \* k\) to construct a graph, with N words and K letters
-* O\(n\) or O\(n^2\) to do BFS. Worse case would be a complete graph, and to check all possibilities.
+```python
+class Solution:
+    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+        idxs = collections.defaultdict(set)
+        words = set(wordList)
+        
+        if endWord not in words:
+            return 0
+        # Store all possible letters in each position
+        for word in words:
+            for i, c in enumerate(word):
+                idxs[i].add(c)
+        
+        # BFS
+        q = collections.deque()
+        q.append((beginWord, 1))
+        
+        seen = set()
+        seen.add(beginWord)
+        
+        while q:
+            w, s = q.popleft()
+            if w == endWord:
+                return s
+            for i in range(len(w)):
+                for c in idxs[i]:
+                    new_word = w[:i] + c + w[i+1:]
+                    if new_word in words and new_word not in seen:
+                        q.append((new_word, s+1))
+                        seen.add(new_word)
+        return 0
+```
 

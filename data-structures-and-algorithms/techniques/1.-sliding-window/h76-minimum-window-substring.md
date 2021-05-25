@@ -38,7 +38,7 @@ Output: "BANC"
 5. The terminating condition for shifting `r` is `r < len(s)`.
 6. If the current element `e` is an element we still need, then we indicate that we have found it by decrementing `num_t`.
 7. Regardless of whether we needed `e`, we still decrease `e`'s count in the counter. The negative count accounts for the extra `e`s we find along the way.
-8. In this specific implementation, the counter is only manipulated if `e` is in `t`, but this method would still work even if it wasn't it `t`, as the counter returns a 0 if a non-existing key is inserted. This is done so that the code is clearer, and to reduce the size of `count`.
+8. In this specific implementation, the counter is only manipulated if `e` is in `t`, but this method would still work even if it wasn't in `t`, as the counter returns a 0 if a non-existing key is inserted. This is done so that the code is clearer, and to reduce the size of `count`.
 9. We shift `r` down by 1 at this point. We can use `r` for length calculations due to zero-indexing.
 10. After shifting `r`, we will check if we have achieved a valid window \(`num_t == 0`\). If we have, then we begin shifting `l` until we get an invalid window.
 11. If we have achieved a new minimum length, save its length and starting point.
